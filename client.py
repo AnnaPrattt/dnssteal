@@ -49,11 +49,13 @@ dataSimplified = data.encode("ascii")
 dataBase64Bytes = base64.b64encode(dataSimplified)
 dataEncoded = dataBase64Bytes.decode("ascii")
 
-print(dataEncoded)
+# remove padding of equal signs (=), if any exist. 
+# most base64 decoders can decode just fine without the padding.
+while dataEncoded[-1] == "=":
+    dataEncoded = dataEncoded[:-1]
 
 # write out error log 
 with open(LOG_ERROR_TARGET_FILE, "a") as fileStreamError:
   fileStreamError.write(logError)
-
 
 quit()

@@ -1,0 +1,10 @@
+user01:Passw0rd!
+test_user:123Test!
+demoUser:demo1234
+alpha_user:Alpha2025!
+betaTester:Beta@123
+mock_account:MockPass#1
+dev_user:Dev2025*
+sampleUser:Sample!456
+guest_account:Guest@789
+trialUser:TrialPass99
