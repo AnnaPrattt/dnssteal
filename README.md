@@ -35,3 +35,4 @@ The tool accepts the following arguments:
 
 # Future Work
 * Introduce sequencing mechanism for DNS packets
+* Intercept std:out and std:err from subprocess commands
